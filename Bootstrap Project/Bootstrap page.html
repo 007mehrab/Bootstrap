@@ -4,12 +4,17 @@
   <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Bootstrap Theme The Band</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
   <style>
   body {
     font: 400 15px/1.8 Lato, sans-serif;
@@ -163,10 +168,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <!-- Logo -->
+      <a class="navbar-brand">MeHaAb</a>
+      <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="logo" style="width:40px;">
+      </a>
+
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+
         <li><a href="#myPage">HOME</a></li>
         <li><a href="#band">BAND</a></li>
         <li><a href="#tour">TOUR</a></li>
@@ -197,7 +208,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="ny.jpg" alt="New York" width="1200" height="700">
+        <img src="images/ny.jpg" alt="New York" width="1200" height="700">
         <div class="carousel-caption">
           <h3>New York</h3>
           <p>The atmosphere in New York is lorem ipsum.</p>
@@ -205,7 +216,7 @@
       </div>
 
       <div class="item">
-        <img src="chicago.jpg" alt="Chicago" width="1200" height="700">
+        <img src="images/chicago.jpg" alt="Chicago" width="1200" height="700">
         <div class="carousel-caption">
           <h3>Chicago</h3>
           <p>Thank you, Chicago - A night we won't forget.</p>
@@ -213,7 +224,7 @@
       </div>
     
       <div class="item">
-        <img src="la.jpg" alt="Los Angeles" width="1200" height="700">
+        <img src="images/la.jpg" alt="Los Angeles" width="1200" height="700">
         <div class="carousel-caption">
           <h3>LA</h3>
           <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
@@ -242,7 +253,7 @@
     <div class="col-sm-4">
       <p class="text-center"><strong>Name</strong></p><br>
       <a href="#demo" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="images/Mehrab2.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
       <div id="demo" class="collapse">
         <p>Guitarist and Lead Vocalist</p>
@@ -253,7 +264,7 @@
     <div class="col-sm-4">
       <p class="text-center"><strong>Name</strong></p><br>
       <a href="#demo2" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="images/Mehrab2.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
       <div id="demo2" class="collapse">
         <p>Drummer</p>
@@ -264,7 +275,7 @@
     <div class="col-sm-4">
       <p class="text-center"><strong>Name</strong></p><br>
       <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="images/Mehrab2.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
       <div id="demo3" class="collapse">
         <p>Bass player</p>
@@ -289,7 +300,7 @@
     <div class="row text-center">
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="paris.jpg" alt="Paris" width="400" height="300">
+          <img src="images/paris.jpg" alt="Paris" width="400" height="300">
           <p><strong>Paris</strong></p>
           <p>Friday 27 November 2015</p>
           <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
@@ -297,7 +308,7 @@
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="newyork.jpg" alt="New York" width="400" height="300">
+          <img src="images/newyork.jpg" alt="New York" width="400" height="300">
           <p><strong>New York</strong></p>
           <p>Saturday 28 November 2015</p>
           <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
@@ -305,7 +316,7 @@
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+          <img src="images/sanfran.jpg" alt="San Francisco" width="400" height="300">
           <p><strong>San Francisco</strong></p>
           <p>Sunday 29 November 2015</p>
           <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
@@ -351,7 +362,8 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container">
+<div class="container">
+<div id="contact">
   <h3 class="text-center">Contact</h3>
   <p class="text-center"><em>We love our fans!</em></p>
 
@@ -405,14 +417,16 @@
 </div>
 
 <!-- Image of location/map -->
-<img src="map.jpg" class="img-responsive" style="width:100%">
+<img src="images/map.jpg" class="img-responsive" style="width:100%">
+
+</div>
 
 <!-- Footer -->
 <footer class="text-center">
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
+  <p>Bootstrap Theme Made By <a href="https://www.mehrab.lovestoblog.com" data-toggle="tooltip" title="Visit w3schools"> <u>Mehrab Hossain </u></a></p> 
 </footer>
 
 <script>
@@ -445,6 +459,10 @@ $(document).ready(function(){
   });
 })
 </script>
+
+<script src="js/jquery.min.js"></script>
+  <!-- bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>

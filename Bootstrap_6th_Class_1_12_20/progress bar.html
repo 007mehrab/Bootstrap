@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Progress Bar</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- custom css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h2>Basic Progress Bar</h2>
+		<p>To create a default progress bar, add a .progress class to a container element and add the progress-bar class to its child element. Use the CSS width property to set the width of the progress bar:</p>
+		<div class="progress">
+			<div class="progress-bar progress-bar-success progress-bar-striped" style="width:70%">Complete 70%</div>
+		</div>
+
+		<div class="progress">
+			<div class="progress-bar progress-bar-danger progress-bar-striped" style="width:60%">Complete 60%</div>
+		</div>
+
+		<div class="progress">
+			<div class="progress-bar progress-bar-warning progress-bar-striped" style="width:50%">Complete 50%</div>
+		</div>
+
+		<div class="progress">
+			<div class="progress-bar progress-bar-info progress-bar-striped" style="width:40%">Complete 40%</div>
+		</div>
+
+		<div class="progress">
+			<div class="progress-bar progress-bar bg-danger progress-bar-striped" style="width:30%">Complete 30%</div>
+		</div>
+
+		<!-- <div class="progress">
+			<div class="progress-bar bg-success" style="width:40%">
+				Free Space
+			</div>
+			<div class="progress-bar bg-warning" style="width:10%">
+				Warning
+			</div>
+			<div class="progress-bar bg-danger" style="width:20%">
+				Danger
+			</div>
+		</div> -->
+
+		<div class="progress">
+			<div class="progress-bar progress-bar-success progress-bar-striped" role="progress-bar" ariel-valuenow="40" ariel-valuemin="0" ariel-valuemax="100" style="width:40%">40%
+			<span class="sr-only">40% complete</span>
+		    </div>
+		    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progress-bar" ariel-valuenow="40" ariel-valuemin="0" ariel-valuemax="100" style="width:30%">30%
+			<span class="sr-only">30% complete</span>
+		    </div>
+		    <div class="progress-bar progress-bar-warning progress-bar-striped" role="progress-bar" ariel-valuenow="40" ariel-valuemin="0" ariel-valuemax="100" style="width:20%">20%
+			<span class="sr-only">20% complete</span>
+		    </div>
+		    <div class="progress-bar progress-bar-info progress-bar-striped" role="progress-bar" ariel-valuenow="40" ariel-valuemin="0" ariel-valuemax="100" style="width:10%">10%
+			<span class="sr-only">10% complete</span>
+		    </div>
+		</div>
+
+	</div>
+
+	<!-- JQuary -->
+	<script src="js/jquery.min.js"></script>
+	<!-- bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
